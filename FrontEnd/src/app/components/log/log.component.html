@@ -1,0 +1,26 @@
+<div class="jumbotron">
+      <h2 class="sitetitle">Application Log</h2>
+      <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Log ID</th>
+              <th>Action Type</th>
+              <th>Action Description</th>
+              <th>Responsible</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody *ngFor ="let log of logs">
+            <tr>
+              <th>{{ log._id }}</th>
+              <td>{{ log.type }}</td>
+              <td>{{ log.actiondescription }}</td>
+              <td>{{ log.responsible }}</td>
+              <td>{{ log.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="button">
+          <a class="btn btn-primary" routerLink="/list">Back</a>
+        </div>
+    </div>
