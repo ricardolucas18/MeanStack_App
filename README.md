@@ -1,6 +1,6 @@
 # MEAN Social App
 
-## General install instructions for development
+## General install instructions for development:
 
 -   Install node (recommended version)
 -   Install mongoDB
